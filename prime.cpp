@@ -1,24 +1,24 @@
 #include<iostream>
 using namespace std;
-void sumprime(int n1,int n2,int num);
+void sumprime(int i,int j,int num);
 int main(){
 	int num,i,j;
 	char ch='a';
 	do{
-		system("cls");
-		cout<<"Program to find if a number can be expressed as a sum of two prime numbers\n\n"<<endl;
-    	cout<<"Enter the number:\t";
-    	cin>>num;
-    	for(i=0;i<=num/2;i++){
-    		for(j=0;j<=num;j++){
-    			if(num==i+j){
-    			sumprime(i,j,num);
-    		    }
-    		}
-    	}
-    	cout<<"\n\nDo you wish to check for another number (y/n):\t";
-    	cin>>ch;
-    }while(ch=='y' || ch=='Y');
+	      system("cls");
+	      cout<<"Program to find if a number can be expressed as a sum of two prime numbers\n\n"<<endl;
+    	      cout<<"Enter the number:\t";
+    	      cin>>num;
+    	      for(i=0;i<=num/2;i++){
+    		  for(j=0;j<=num;j++){
+    		       if(num==i+j){
+    		       sumprime(i,j,num);
+    		       }
+    		  }
+    	       }
+    	       cout<<"\n\nDo you wish to check for another number (y/n):\t";
+    	       cin>>ch;
+         }while(ch=='y' || ch=='Y');
   	cout<<"\n\n*******End of program********"<<endl;
 	return 0;
 }
