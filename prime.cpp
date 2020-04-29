@@ -7,7 +7,7 @@ int main(){
 	do{
 	      system("cls");
 	      cout<<"Program to find if a number can be expressed as a sum of two prime numbers\n\n"<<endl;
-    	      cout<<"Enter the number:\t";
+    	      cout<<"Enter a positive integer:\t";
     	      cin>>num;
     	      for(i=0;i<=num/2;i++){
     		  for(j=0;j<=num;j++){
